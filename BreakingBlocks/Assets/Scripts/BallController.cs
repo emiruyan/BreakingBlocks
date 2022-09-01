@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class BallController : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private Rigidbody2D rb;//Rigidbody'e eriştik.
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody2D>(); //rb değişkenini Rigidbody componentine atadık.
+        rb.AddForce(Vector3.up * 300f);//Ball Rigidbody'sine yukarı doğru 300f'lik bir güç ekledik. 
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         
