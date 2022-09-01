@@ -14,7 +14,7 @@ public class ShooterController : MonoBehaviour
             //Mouse pozisyonunu aldık.
         ));
 
-        mousePos.x = Mathf.Clamp(mousePos.x,-2.4f, 2.4f);
+        mousePos.x = Mathf.Clamp(mousePos.x,-2.2f, 2.2f);
         //MathfClamp ile Shooter'ın hareketini ekran içinde kalacak şekilde sınırladık.
 
         transform.position = new Vector3(

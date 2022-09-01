@@ -10,10 +10,4 @@ public class BallController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>(); //rb değişkenini Rigidbody componentine atadık.
         rb.AddForce(Vector3.up * 300f);//Ball Rigidbody'sine yukarı doğru 300f'lik bir güç ekledik. 
     }
-
-
-    void Update()
-    {
-        
-    }
 }
